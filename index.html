@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi biografía👾</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="./assets/images/3.png">
 </head>
 <body>
-    <h1>Proyecto M1</h1>
+    <header class="header">
+        <div class="header__contain-logo">
+            <img class="header__logo" src="./assets/images/3.png" alt="logo pequeño"/>
+        </div>
+        <nav class="header__nav">
+             <a class="header__nav-link"   href="#">INICIO</a>
+             <a class="header__nav-link"   href="#">SOBRE MI</a>
+             <a class="header__nav-link"   href="#">CONTACTO</a>
+        </nav>
+        <div class="container-login-mobile">
+            <img class="container-login-mobile_img"  src="./assets/images/Diseño sin título (2).png" alt="dino">
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__contain-text">
+            <h1 class="main__titulo">M.Belén Betanzo</h1>
+            <p class="main__descripcion">Descubriendo el mundo <span>tecnológico</span></p>
+            <p class="main__parrafo">Hola! Esta es mi primer página web. Soy actualmente estudiante de Henry, además soy técnica en turismo y estudié la carrera de pasteleria, dos cosas que amo y que aún quiero seguir ejerciendo. Sin embargo hoy en día despues de mucho replanteamiento acerca de mi futuro y un gusto por la tecnología desde hace años, decidí que es hora de expandirme y seguir estudiando, esta vez, para el lado de la tecnología que actualmente está muy presente como asi en nuestro futuro también lo seguirá estando.</p>
+        </div>
+        <div class="main__contiene-imagen">
+            <img class="main__imagen" src="./assets/images/yo.jpg" alt="foto">
+        </div>
+    </main>
+    <div class="div__tecnologias" >
+        <h3 class="div__tecnologiash3" >Tecnologías favoritas</h3>
+        <img class="div__tecnologiasimg" src="./assets/images/361086284e932b5ad9a5c8df6afff1c1.png" alt="tecnologias">
+    </div>
+    <section class="section">
+        <form class="section__all">
+        <h2 class="section__text">MIS ACTIVIDADES</h2>
+        <label class="section__label" >Título</label>
+        <input class="section__input" type="text" placeholder="Cómo se llama tu actividad?🚀">
+        <label class="section__label">Descripción</label>
+        <input class="section__input" type="text" placeholder="Describila acá😁"> <!--TEXTAREA-->
+        <label class="section__label" >URL</label>
+        <input class="section__input" type="url" placeholder="Pegá acá la url de la imagen😎">
+        <button class="section__btn" type="submit">AGREGAR ACTIVIDAD🙌</button>
+        </form>
+    </section>
+    <div>
+        <img  class="div__imgfooter" src="./assets/images/Sin título (1500 x 80 px) (3).png" alt="gatitos">
+    </div>
+    <footer class="footer">
+        <div class="footer__div" >
+        <div class="footer__divIg" >
+          <img class="footer__logoIg"  src="./assets/images/instagram.png" alt="instagram">
+          <a class="footer__textIg"  href="https://www.instagram.com/mbelenbe/" target="_blank">@mbelenbe</a>
+       </div>
+       <div class="footer__cntimg">
+        <img class="footer__img" src="./assets/images/logofooter.png" alt="">
+       </div>
+       <div class="footer__divFb" >
+         <img  class="footer__logoFb" src="./assets/images/facebook.png" alt="facebook">
+         <a class="footer__textFb" href="https://www.instagram.com/cocoa_bombones/" target="_blank">@cocoabombones</a>
+       </div>
+       </div>
+    </footer>
 </body>
 </html>
