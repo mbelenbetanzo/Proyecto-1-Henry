@@ -21,7 +21,7 @@ body {
     position: fixed;
     z-index: 100;
     height: 60px;
-    top: 0; /* Añadido para asegurar que el header quede fijo en la parte superior */
+    top: 0; /*pa que no se mueva desde arriba!
 }
 
 .header__logo { /*LOGO DE LA IZQUIERDA SUPERIOR*/
@@ -29,7 +29,7 @@ body {
     height: 45px;
 }
 
-.header__nav { /*ESTO QUE QUEDE ASI YA QUE LO ESTOY OCULTANDO*/
+.header__nav { /*ESTO QUE QUEDE ASI YA QUE LO ESTOY OCULTANDO EN TAMAÑO MOBILE*/
     display: none;
 }
 
@@ -44,9 +44,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center; /* Centrar contenido horizontalmente */
+    align-items: center; 
     margin: 0 20px;
-    padding-top: 80px; /* Añadir espacio para que el contenido no quede detrás del header */
+    padding-top: 80px;
 }
 
 .main__contain-text { /*ESTE ES EL BLOQUE DEL PARRAFO*/
@@ -61,8 +61,8 @@ body {
 .main__imagen { /*ESTA ES LA IMAGEN*/
     width: 200px;
     height: 200px;
-    border-radius: 50%; /* Hacer la imagen redonda */
-    margin-top: 20px; /* Espacio entre el texto y la imagen */
+    border-radius: 50%;
+    margin-top: 20px;
 }
 .main__titulo{
     margin-bottom: 20px;
@@ -84,10 +84,10 @@ body {
     font-size: 15px;
     font-weight:300;
     margin-bottom: 10px;
-
 }
+
 .main__contain-text {
-    text-align: justify; /* Justifica el texto */
+    text-align: justify;
 }
 
 .div__tecnologias{
@@ -119,9 +119,9 @@ body {
     height: auto;
     margin-top: 20px;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .section__all {
@@ -135,7 +135,6 @@ body {
     border-radius: 30%;
     margin-top: 40px; 
     margin-bottom: 100px;
-    
 }
 
 .section__text{
@@ -214,8 +213,6 @@ body {
     justify-content: center;
     align-self: center;
     align-content: center;
-
-
 }
 
 .footer__divIg{
@@ -231,8 +228,6 @@ body {
     justify-content: center;
     align-self: center;
     align-content: center;
-
-
 }
 
 .footer__textFb, .footer__textIg{
@@ -245,6 +240,7 @@ body {
     font-weight: bold;
     font-size: 10px;
 }
+
 .footer__div{
     display: flex;
     justify-content: space-between;
@@ -261,7 +257,60 @@ body {
     margin-top: 10px;
 }
 
+.section__p{
+    color: white;
+    font-weight: bolder;
+    align-self: center;
+}
+
+#container{
+    background: url(../assets/images/header.png);
+    border-radius: 15px;
+    border: 3px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    gap: 10px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+.card{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 250px;
+    height: 320px;
+    text-align: center;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.descripcion{
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.imagen{
+    width: 170px;
+    height: 170px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
 /*//////////////////////////////////////////////////////////////////////*/
+
 @media(min-width: 1024px) {
     .header{
         background: url(../assets/images/header.png);
@@ -293,7 +342,6 @@ body {
     .container-login-mobile {
         margin-right: 25px;
         margin-top: 5px;
-     
     }
     
     .container-login-mobile_img{
@@ -301,7 +349,6 @@ body {
         height: 60px;
         border-radius: 50px;
         /*margin-right: 30px;*/
-    
     }
     
     .header__nav {
@@ -312,9 +359,7 @@ body {
     body{
         background-color: rgb(20, 18, 18);
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
     }
-    
     
     .main{
         /* Ajustamos el padding-top para evitar el solapamiento con el header */
@@ -324,7 +369,6 @@ body {
         margin-left: 80px;
         height: auto;
         margin-bottom: 80px;
-        
     }
     
     /* Contenedor de texto dentro del main */
@@ -339,7 +383,6 @@ body {
         flex-direction: column;
         align-content: center;
         width: 500px;
-        
     }
     
     .main__titulo{
@@ -357,31 +400,34 @@ body {
         font-weight: bold;
         text-align: justify;
     }
+
     .main__imagen{
         width: 300px;
         height: 300px;
         border-radius: 50%;
     }
+
     .main__contiene-imagen{
         margin-top: 150px;
         margin-right: 130px;
     }
+
     .main__parrafo{
         font-size: 20px;
         margin-top: 25px;
         font-weight:300;
-    
     }
+
     .main__contain-text {
         text-align: justify; /* Justifica el texto */
     }
+
     .div__imgfooter{
     
         width: 100%;
         height: 100px;
         display: block;
     }
-    
     
     .footer{
         background: url(../assets/images/footer.png);
@@ -393,7 +439,6 @@ body {
         width: 280px;
         height: 90px;
         margin-top: 10px;
-        
     }
     
     .div__tecnologias{
@@ -416,7 +461,6 @@ body {
         height: 30px;
     }
     
-    
     .footer__divFb, .footer__divIg{
         margin-left: 50px;
         display: flex;
@@ -431,7 +475,6 @@ body {
         align-self: center;
         align-content: center;
     
-    
     }
     .footer__textFb, .footer__textIg{
         text-decoration: none;
@@ -442,6 +485,7 @@ body {
         justify-content: center;
         font-weight: bold;
         font-size: 20px;
+
     }
     .footer__div{
         display: flex;
@@ -452,6 +496,7 @@ body {
         color: white;
         align-content: center;
     }
+
     .footer__img{
         width: 60px;
         height: 60px;
@@ -467,11 +512,10 @@ body {
         display: flex;
         justify-content: center; /* Centra horizontalmente */
         align-items: center; /* Centra verticalmente */
-        
+        flex-direction: column;
     }
     
     .section__all {
-        
         background: url(../assets/images/header.png);
         width: 700px;
         height: auto;
@@ -481,7 +525,6 @@ body {
         border-radius: 30%;
         margin-top: 70px; 
         margin-bottom: 100px;
-        
     }
 
     .section__label{
@@ -508,7 +551,8 @@ body {
         height: 50px;
         align-self: center;
         margin-bottom: 25px;
-        color: white;
+        color: #24837b ;
+        font-weight: bold;
     }
     
     .section__btn{
@@ -522,21 +566,23 @@ body {
         color: white;
         background: url(../assets/images/header.png);
         cursor: pointer;
-        transition: 0.5s all;
+        transition: 0.2s all;
     }
     
     .section__input:focus{
         background-color: black;
     }
+
     .section__btn:focus{
         background-color: black;
     }
+
     .section__input::placeholder{
-        padding: 10px;
+        padding: 10px;  
     }
+
     .section__btn:hover{
         background-color: #50B6AD;
-        
         border: 2px solid yellow;
     }
     
@@ -544,9 +590,51 @@ body {
         color: white;
         font-weight: bolder;
         align-self: center;
+        margin-bottom: 20px;  
     }
 
+    #container{
+        background: url(../assets/images/header.png);
+        border-radius: 15px;
+        border: 3px solid white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        gap: 10px;
+    }
 
+    .card{
+        padding: 5px;
+        margin: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 250px;
+        height: 320px;
+        text-align: center;
+        margin-top: 20px;
+    }
 
+    .titulo{
+        text-align: center;
+        color: white;
+        margin-bottom: 10px;
+    }
 
-}
+    .descripcion{
+        text-align: center;
+        color: white;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+
+    .imagen{
+        width: 180px;
+        height: 180px;
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+    }
+};
